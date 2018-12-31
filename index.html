@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>GPA Calculator</title>
+</head>
+<body>
+  <script src="script.js"></script>
+<h1>Welcome</h1>
+  
+  <h2>Please select what you wanna do:</h2>
+ 
+  
+  <input type="text" id="1" placeholder="Enter marks" required>
+  <button onClick="gpa()">GPA</button>
+ 
+   <input type="text" id="2" placeholder="Enter marks" required>
+ 
+  <button onClick="sgpa()">SGPA</button>
+    <input type="text" id="1" placeholder="Enter marks" required>
+
+  <button onClick="cgpa()">CGPA</button>
+<script id="jsbin-javascript">
+function gpa(){
+  
+  //console.log("Enter marks for one subject")
+  var value = document.getElementById('1').value;
+  //console.log(value)
+  var qp
+  var res =0
+  if(value >= 80){
+    
+     qp=12
+   res = 12/3
+  }
+  
+ else if(value >=70 && value <=79){
+    
+     qp=9
+   res = 9/3
+  }
+  
+  else if(value >=60 && value <=69){
+    
+     qp=6
+   res = 6/3
+  }
+  
+  console.log("GPA=" + res)
+}
+
+function sgpa(){
+  
+  
+  console.log("Enter marks of all subjects")
+}
+
+function cgpa(){
+  
+  
+  
+}
+</script>
+
+
+
+<script id="jsbin-source-javascript" type="text/javascript">
+
+
+function gpa(){
+  
+  //console.log("Enter marks for one subject")
+  var value = document.getElementById('1').value;
+  //console.log(value)
+  var qp
+  var res =0
+  if(value >= 80){
+    
+     qp=12
+   res = 12/3
+  }
+  
+ else if(value >=70 && value <=79){
+    
+     qp=9
+   res = 9/3
+  }
+  
+  else if(value >=60 && value <=69){
+    
+     qp=6
+   res = 6/3
+  }
+  
+  console.log("GPA=" + res)
+}
+
+function sgpa(){
+  
+  
+  console.log("Enter marks of all subjects")
+}
+
+function cgpa(){
+  
+  
+  
+}</script></body>
+</html>
